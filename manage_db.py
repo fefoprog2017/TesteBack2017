@@ -10,7 +10,7 @@ class tb_customer(object):
         self.db.close_db()
         
     #Função para criar a tabela.
-    def criar_schema(self, schema_name='sql/customer_schema.sql'):
+    def criar_schema(self, schema_name='customer_schema.sql'):
         print("Criando tabela %s ..." % self.tb_name)
         try:
             with open(schema_name, 'rt') as f:
